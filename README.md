@@ -36,21 +36,6 @@ digits,frequency
 3. Ensure the CSV exists at `data/4digitRockYouFrequencies_2kPlus.csv`.
 4. Click Run.
 
-## How to Run (CLI)
-Install the `processing-java` tool from Processing (Tools → Install "processing-java"). Then run:
-
-```zsh
-processing-java \
-	--sketch="/Users/erika/Documents/2025 ISSE third year fall semester/Data Visualization/rock_20251117c" \
-	--run
-```
-
-If you have multiple Processing versions, you can also launch the app binary directly (GUI):
-
-```zsh
-open -a Processing "/Users/erika/Documents/2025 ISSE third year fall semester/Data Visualization/rock_20251117c/rock_20251117c.pde"
-```
-
 ## Controls
 - `←` / `p`: Previous group
 - `→` / `n`: Next group
@@ -59,12 +44,5 @@ open -a Processing "/Users/erika/Documents/2025 ISSE third year fall semester/Da
 ## Notes
 - The sketch normalizes inputs to 4 digits (e.g., `741` → `0741`).
 - Pattern groups include: All Same, Ascending/Descending Sequences, Palindrome, AABB, ABAB, Year‑like, and Other.
-- Fonts: uses `Arial` via `createFont("Arial", 12)`; your system should have Arial or a compatible substitute.
 
-## Troubleshooting
-- "Cannot find or load data": verify the file exists at `data/4digitRockYouFrequencies_2kPlus.csv` and the header is exactly `digits,frequency`.
-- Nothing appears or labels overlap: try resizing the sketch window or reducing display scale.
-- CLI errors: ensure `processing-java` is installed and that the `--sketch` path is quoted (paths contain spaces).
 
-## Screenshot (optional)
-Add a screenshot of a representative view here once the sketch is running.
